@@ -2,23 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 header{
     height: 100vh;
-    background: #0B0A0A;
+    background: #000000;
     color: white;
 }
 
 .logo{
     display: grid;
-    grid-template-columns: 1fr 9fr;
+    grid-template-columns: 1fr 8fr;
     align-items: center;
 }
 
 h1{
     font-size: 1.2rem;
     font-weight: 400;
+    font-family: monospace;
 }
 .header img{
     width: 100px;
@@ -30,13 +32,49 @@ h1{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    background: burlywood;
+    padding: 30px;
 }
 
 .buttons{
     display: flex;
     justify-content: space-around;
 }
+
+button{
+    font-family: monospace;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+button:hover{
+    background: rgb(50, 50, 50);
+    transform: scale(1.075);
+    transition: 0.15s;
+}
+
+header a{
+    text-decoration: none;
+}
+
+.text{
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: monospace;
+    font-weight: 200;
+    gap:3px;
+}
+
+
+
 
 
 

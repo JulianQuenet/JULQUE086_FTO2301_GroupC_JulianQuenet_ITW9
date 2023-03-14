@@ -1,0 +1,57 @@
+.boxes div{
+    background: transparent;
+    border: solid 1px grey;
+    position: absolute;
+    cursor: auto;
+}
+
+.boxes div:hover{
+    transform: scale(1.075);
+    box-shadow: 0 0 0 5px rgb(47, 133, 139), 0 0 10px #00ade2, 0 0 30px #00ade2, 0 0 50px #00ade2;
+    transition: 0.3s;
+}
+
+.boxes :nth-child(1){
+     top:85vh;
+     left:20vw;
+     height: 220px ;
+     width: 220px ;
+     animation: loop 11s linear infinite;
+}
+
+.boxes :nth-child(2){
+    top:75vh;
+    left:55vw;
+    height: 130px ;
+    width: 130px ;
+    animation: loop 7s linear infinite;
+}
+
+.boxes :nth-child(3){
+    top:65vh;
+    left:65vw;
+    height: 180px ;
+    width: 180px ;
+    animation: loop 6s linear infinite;
+}
+
+.boxes :nth-child(4){
+    top:80vh;
+    left:35vw;
+    height: 130px ;
+    width: 130px ;
+    animation: loop 10s linear infinite;
+}
+
+@keyframes loop {
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 100%;
+    }
+
+    100%{
+        transform: scale(1) translateY(-80vh) rotate(360deg);
+        opacity: 0%;
+    }
+    
+}
