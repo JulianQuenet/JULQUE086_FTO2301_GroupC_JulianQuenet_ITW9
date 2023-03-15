@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: sans-serif;
 }
 
 header{
@@ -15,12 +16,14 @@ header{
     display: grid;
     grid-template-columns: 1fr 8fr;
     align-items: center;
+    gap:5px;
 }
 
 h1{
     font-size: 1.2rem;
     font-weight: 400;
     font-family: monospace;
+    text-transform: uppercase;
 }
 .header img{
     width: 100px;
@@ -70,8 +73,61 @@ header a{
     font-size: 1rem;
     font-family: monospace;
     font-weight: 200;
-    gap:3px;
+    gap:10px;
 }
+
+
+main{
+    background: #fffbf3;
+    
+}
+
+.Studies{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 50px;
+    gap: 1rem;
+}
+
+.studiesImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.studiesImg img{
+    border-radius: 10px;
+    max-width: 350px;
+    max-height: 250px;
+}
+
+.Work{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    padding: 50px;
+    gap: 1rem;
+}
+
+.workText{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.workImg{
+    grid-column-start: 2;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.workImg img{
+    border-radius: 10px;
+    max-width: 350px;
+    max-height: 250px;
+}
+
+
 
 
 
