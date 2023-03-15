@@ -207,19 +207,37 @@ span{
     margin:10px;
 }
 
+/*decrease font-size for better tolerances(for tablets)*/
+@media only screen and (max-width:880px){
+    
+    h2,h3,h4,main p{
+        font-size: 0.9rem;
+    }
+}
 
-@media only screen and (max-width:550px) {
+/*Background changed and font-size further decreased for better tolerances*/
+@media only screen and (max-width:650px){
+    
+    .boxes div{
+        visibility: hidden;
+    }
+
+    header{
+        background: url(../Images/nightSky.png)
+    }
+
+    h2,h3,h4,main p{
+        font-size: 0.8rem;
+    }
+
+}
+
+/*Big change for mobile, layout gets changed*/
+@media only screen and(max-width:550px) {
     
 }
 
-@media only screen and (max-width:650){
-    
-}
 
-
-@media only screen and (min-width:880px) {
-    
-}
 
 
 
