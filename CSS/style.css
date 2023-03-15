@@ -82,10 +82,43 @@ main{
     
 }
 
+main img{
+    border-radius: 10px;
+    width: 350px;
+    max-width: 100%;
+    box-shadow: 0 0 15px black;
+}
+
+article{
+    padding:5vw;
+}
+
+section{
+    margin-top: 5rem;
+}
+
+section p{
+    font-size: 1.2rem;
+}
+
+h4{
+    font-weight: 150;
+    color: rgb(146, 144, 144);
+}
+
+h3{
+    font-weight: 600;
+    color: rgb(236, 158, 14);
+}
+
+h2,h3,h4{
+    margin-bottom: 0.4rem;
+    margin-top: 0.8rem;
+}
+
 .Studies{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    padding: 50px;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
 
@@ -95,37 +128,99 @@ main{
     align-items: center;
 }
 
-.studiesImg img{
-    border-radius: 10px;
-    max-width: 350px;
-    max-height: 250px;
-}
 
 .Work{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    padding: 50px;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
+
 }
 
-.workText{
-    grid-column-start: 1;
-    grid-row-start: 1;
-}
 
 .workImg{
-    grid-column-start: 2;
     display: flex;
     justify-content: center;
     align-self: center;
 }
 
-.workImg img{
-    border-radius: 10px;
-    max-width: 350px;
-    max-height: 250px;
+
+#skills{
+    display: flex;
+    justify-content: center;
 }
+
+
+.Skills{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+
+footer{
+    background: rgb(29, 27, 27);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 0 15px black;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+form{
+    border: solid 2px rgb(236, 158, 14);
+    padding: 1vw;
+    border-radius: 10px;
+}
+
+label{
+    display: block;
+    text-align: left;
+}
+
+input{
+    width: 210px;
+}
+
+input,textarea{
+    padding: 5px;
+    font-size: 15px;
+}
+
+input#submit{
+    margin-left: 25px;
+}
+
+span{
+    color: red;
+    font-size: 16px;
+}
+
+.Icons{
+    margin:10px;
+}
+
+
+@media only screen and (max-width:550px) {
+    
+}
+
+@media only screen and (max-width:650){
+    
+}
+
+
+@media only screen and (min-width:880px) {
+    
+}
+
 
 
 

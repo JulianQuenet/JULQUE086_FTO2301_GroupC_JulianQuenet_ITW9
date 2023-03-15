@@ -12,10 +12,10 @@
 }
 
 .boxes :nth-child(1){
-     top:85vh;
+     top:75vh;
      left:20vw;
-     height: 220px ;
-     width: 220px ;
+     height: 200px ;
+     width: 200px ;
      animation: loop 11s linear infinite;
 }
 
