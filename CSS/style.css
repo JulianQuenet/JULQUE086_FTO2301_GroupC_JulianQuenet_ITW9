@@ -70,6 +70,10 @@ header a{
     text-decoration: none;
 }
 
+a{
+    color: #39B965;
+}
+
 .text{
     height: 65vh;
     display: flex;
