@@ -1,7 +1,7 @@
-*{
+*{  
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
     scroll-behavior: smooth;
     font-family: sans-serif;
 }
@@ -76,6 +76,9 @@ header a{
     gap:10px;
 }
 
+article{
+    padding: 5vw;
+}
 
 main{
     background: #fffbf3;
@@ -89,9 +92,26 @@ main img{
     box-shadow: 0 0 15px black;
 }
 
-article{
-    padding:5vw;
+aside{
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
 }
+
+aside button{
+    margin: 5px;
+    color: #000000;
+}
+
+.asideBtn{
+    background: #fffbf3;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 15px rgb(43, 43, 43);
+}
+
 
 section{
     margin-top: 5rem;
@@ -171,6 +191,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -207,6 +228,8 @@ span{
     margin:10px;
 }
 
+
+
 /*decrease font-size for better tolerances(for tablets)*/
 @media only screen and (max-width:880px){
     
@@ -223,7 +246,11 @@ span{
     }
 
     header{
-        background: url(../Images/nightSky.png)
+        background: url(../Images/nightSky.png);
+    }
+
+    header{
+        height: 75vh;
     }
 
     h2,h3,h4,main p{
@@ -232,10 +259,103 @@ span{
 
 }
 
-/*Big change for mobile, layout gets changed*/
-@media only screen and(max-width:550px) {
+@media only screen and (max-width:550px){
+     
+    body{ 
+        overflow-x: hidden;
+
+    }
+
+    article{
+        padding: 10px;
+    }
     
+
+    h2,h3,h4,main p{
+        font-size: 0.7rem;
+    }
+
+    header p, h1{
+        font-size: 0.8rem;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .text{
+        height: 45vh;;
+    }
+
+    aside button{
+        font-size: 0.5rem;
+    }
+
+    .asideBtn{
+        padding: 5px;
+    }
+
+    .Studies{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .Work{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .workImg{
+        grid-row-start: 1;
+    }
+
+    main img{
+        width: 200px;
+        max-width: 100%;
+    }
+
+    button{
+        font-size: 0.7rem;
+        padding: 5px;
+    }
+
+    input{
+        width: 120px;
+    }
+    
+    input,textarea{
+        padding: 2px;
+        font-size: 8px;
+    }
+
+    input#submit{
+        width: 80px;
+    }
+
+    label{
+        font-size: 10px;
+    }
+
+    header{
+        height: 75vh;
+    }
+
+    .text{
+        height: 45vh;;
+    }
+
+    
+   
+
 }
+
 
 
 
