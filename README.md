@@ -1,5 +1,5 @@
 # Digital-resume by Julian Quenet
-
+Github pages: https://julianquenet.github.io/resume/
 A Portfolio/Resume webpage
 
 Forming part of the Intro to Web resume projects, this being the final project/capstone project focusing on integrating the fundamental aspects of web design  
